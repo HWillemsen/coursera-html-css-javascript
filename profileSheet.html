@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Harmjan Willemsen - Portfolio</title>
+    <link rel="stylesheet" href="./profileSheet.css"/>
+    <script src="./profileSheet.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Harmjan Willemsen
+            <div class="contact_info">
+                <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                myname@myemail.com
+            </div>
+            <div style="clear:both;"></div>
+            <div class="contact_info">
+              <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+                +31612345678
+            </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <!--img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/-->
+        <img src="https://plus.unsplash.com/premium_vector-1710425435145-7f4f0b49edcf?q=80&w=1405&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="profile_image"/>
+    </div>
+
+      <div>
+          <h1>
+            Hello, My name is Harmjan Willemsen <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a pragmatic, results-oriented IT professional with years of experience in designing, developing,
+            testing and implementing information systems. I adapt easily to a new environment and can quickly add value.
+            From my business economics and business administration background I have extensive knowledge of financial,
+            logistical and administrative processes within organizations. Through my various assignments I have a lot of
+            experience with ICT projects within information and knowledge-intensive organizations.</p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+            <img src="html_finalprojimages/CSS3.png"/>
+            <h6>CSS3</h6>
+            <p>5 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/react.png"/>
+            <h6>React</h6>
+            <p>2 years experience</p>
+          </div>  
+
+          <div class="skill">
+            <img src="html_finalprojimages/java.png"/>
+            <h6>Java</h6>
+            <p>4 years experience</p>
+          </div>  
+  
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Aurora Customer Portal</h3>
+            <ul>
+              <li>Development of a secure self‑service platform enabling customers to manage accounts, track orders, and communicate with support through an intuitive, responsive interface.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Nimbus Analytics Dashboard</h3>
+            <ul>
+              <li>Realized a real‑time analytics solution providing interactive visualizations, automated reporting, and role‑based insights for operational and strategic decision‑making</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Horizon Workflow Manager</h3>
+            <ul>
+              <li>Creation of a collaborative workflow system streamlining task assignments, approvals, and process automation with scalable backend services and a modern, user‑friendly UI.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Harmjan demonstrates strong full‑stack expertise, delivering robust, scalable, and thoughtfully engineered solutions while consistently upholding high technical standards.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Harmjan shows exceptional analytical and problem‑solving abilities, approaching complex challenges with professionalism, clarity, and a focus on long‑term maintainability.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Harmjan is great! He collaborates effectively across teams, communicates clearly, and contributes proactively to improving processes, code quality, and overall product excellence.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>

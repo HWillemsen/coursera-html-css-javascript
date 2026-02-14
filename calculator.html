@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Simple Interest Calculator</title>
+        <script src="calculator.js"></script>
+        <link rel="stylesheet" href="calculator.css">
+    </head>
+    <body>
+        <div class='maindiv'>
+            <h1>Simple Interest Calculator</h1>
+
+            Amount <input type="number"  id="principal">  <br/>
+            Rate <input type="range" min="1" max="20" value="10.25" step="0.25" id="rate" onchange="updateRate()"> <span id="rate_val">10.25</span> %  <br/>
+            No. of Years <input list="numbers"  id="years">  <br/>
+            <datalist id="numbers">
+                <option value="01">
+                <option value="02">
+                <option value="03">
+                <option value="04">
+                <option value="05">
+                <option value="06">
+                <option value="07">
+                <option value="08">
+                <option value="09">
+                <option value="10">
+            </datalist>
+
+            Interest : <span id="result"></span><br>
+
+            <button onclick="compute()">Compute Interest</button>
+
+        </div>
+    </body>
+    <footer>
+        &#169; This Calculator belongs to me
+    </footer>
+    </html>
